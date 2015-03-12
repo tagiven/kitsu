@@ -1,0 +1,22 @@
+MYSQL_USERNAME="db_username"
+MYSQL_PASSWORD="XXXXXXXXXXXXXXX" 
+MYSQL_HOST=""
+MYSQL_DATABASE="db_name"
+NUM_TABLES=35
+TABLE_SIZE=10000000
+ENGINE="innodb"
+OUTPUT_LOG="log/bench-$(date +'%Y%m%d%H%M').log"
+SYSBENCH_HOME="/usr/local/src/sysbench-trunk" 
+SYSBENCH_TEST="/sysbench/tests/db/oltp.lua"
+
+# Example InnoDB init
+INIT_TIME=14400
+INIT_THREADS=800
+
+# Test Specifications
+MYSQL_SSL="off"
+READ_ONLY="off"
+TEST_PERIOD=600
+TEST_ITERATIONS=3
+CONNECTION_THREADS=100
+MAX_REQUESTS=1000000000
