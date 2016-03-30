@@ -12,8 +12,8 @@ All configuration options can also be passed via command line.
 # Build test dataset and initialize buffers
 prepare_database.sh
 
-# Clean up test data when completed
-clean_database.sh
-
 # Test initialized database
 test_database.sh
+
+# Delete test data when completed
+clean_database.sh
